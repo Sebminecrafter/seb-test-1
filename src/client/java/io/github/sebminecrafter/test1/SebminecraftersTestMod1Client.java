@@ -5,6 +5,14 @@ import net.fabricmc.api.ClientModInitializer;
 public class SebminecraftersTestMod1Client implements ClientModInitializer {
 	@Override
 	public void onInitializeClient() {
-		// This entrypoint is suitable for setting up client-specific logic, such as rendering.
+		// Currently not doing anything in here...
+		/*
+		Lorem ipsum
+		I met a dog named garret
+		He liked to eat carrots
+		I trotted around
+		He gained some pounds
+		Now I am the one eating carrots
+		 */
 	}
 }
