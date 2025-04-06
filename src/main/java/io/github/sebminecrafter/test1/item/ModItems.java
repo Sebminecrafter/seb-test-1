@@ -1,5 +1,6 @@
-package io.github.sebminecrafter.test1;
+package io.github.sebminecrafter.test1.item;
 
+import io.github.sebminecrafter.test1.SebminecraftersTestMod1;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroups;

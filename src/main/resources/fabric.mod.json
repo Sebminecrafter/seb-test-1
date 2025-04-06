@@ -17,6 +17,9 @@
 	"entrypoints": {
 		"main": [
 			"io.github.sebminecrafter.test1.SebminecraftersTestMod1"
+		],
+		"client": [
+			"io.github.sebminecrafter.test1.SebminecraftersTestMod1Client"
 		]
 	},
 	"mixins": [
