@@ -14,9 +14,8 @@ public class ModItems {
                 .register((itemGroup) -> itemGroup.add(ModItems.SUSPICIOUS_SUBSTANCE));
     }
     public static Item register(Item item, String id) {
-        Identifier itemID = Identifier.of(SebminecraftersTestMod1.MOD_ID, id);
         SebminecraftersTestMod1.LOGGER.info("Item registered: " + id);
-        return Registry.register(Registries.ITEM, itemID, item);
+        return Registry.register(Registries.ITEM, Identifier.of(SebminecraftersTestMod1.MOD_ID, id), item);
     }
     public static final Item SUSPICIOUS_SUBSTANCE = ModItems.register(
             new Item(new Item.Settings()),
