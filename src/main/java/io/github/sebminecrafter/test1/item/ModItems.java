@@ -10,13 +10,12 @@ import net.minecraft.util.Identifier;
 
 public class ModItems {
     public static Item register(Item item, String id) {
-        // Create the identifier for the item.
         Identifier itemID = Identifier.of(SebminecraftersTestMod1.MOD_ID, id);
-
-        // Return the registered item!
+        SebminecraftersTestMod1.LOGGER.info("Item registered: " + id);
         return Registry.register(Registries.ITEM, itemID, item);
     }
     public static void initialize() {
+        SebminecraftersTestMod1.LOGGER.info("Registering items for " + SebminecraftersTestMod1.MOD_ID);
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS)
                 .register((itemGroup) -> itemGroup.add(ModItems.SUSPICIOUS_SUBSTANCE));
     }
