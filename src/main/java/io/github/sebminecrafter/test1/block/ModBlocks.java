@@ -22,6 +22,7 @@ public class ModBlocks {
 
     private static Block register(String name, Block block) {
         registerBlockItem(name, block);
+        SebminecraftersTestMod1.LOGGER.info("Block registered: {}", name);
         return  Registry.register(Registries.BLOCK, Identifier.of(SebminecraftersTestMod1.MOD_ID, name), block);
     }
 
