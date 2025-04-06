@@ -9,15 +9,15 @@ import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
 
 public class ModItems {
-    public static Item register(Item item, String id) {
-        Identifier itemID = Identifier.of(SebminecraftersTestMod1.MOD_ID, id);
-        SebminecraftersTestMod1.LOGGER.info("Item registered: " + id);
-        return Registry.register(Registries.ITEM, itemID, item);
-    }
     public static void initialize() {
         SebminecraftersTestMod1.LOGGER.info("Registering items for " + SebminecraftersTestMod1.MOD_ID);
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS)
                 .register((itemGroup) -> itemGroup.add(ModItems.SUSPICIOUS_SUBSTANCE));
+    }
+    public static Item register(Item item, String id) {
+        Identifier itemID = Identifier.of(SebminecraftersTestMod1.MOD_ID, id);
+        SebminecraftersTestMod1.LOGGER.info("Item registered: " + id);
+        return Registry.register(Registries.ITEM, itemID, item);
     }
     public static final Item SUSPICIOUS_SUBSTANCE = ModItems.register(
             new Item(new Item.Settings()),
