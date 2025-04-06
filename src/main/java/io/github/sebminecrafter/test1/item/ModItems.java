@@ -10,7 +10,6 @@ import net.minecraft.util.Identifier;
 
 public class ModItems {
     public static void initialize() {
-        SebminecraftersTestMod1.LOGGER.info("Registering items for " + SebminecraftersTestMod1.MOD_ID);
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS)
                 .register((itemGroup) -> itemGroup.add(ModItems.SUSPICIOUS_SUBSTANCE));
     }
